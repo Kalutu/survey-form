@@ -1,1 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Survey Form</title>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <div class="content">
+            <img src="images/logo.png" alt="Janja Programmers logo" alt="Janja Programmers logo">
+            <h1 id="title">Janja Programmers</h1>
+            <h2>Survey Form</h2>
+            <p id="description">Thank you for taking the time to help us improve the platform</p>
+            
+            <form id="survey-form">
+                <fieldset>
+                    <label for="name" id="name-label">Name: 
+                        <input id="name" type="text" placeholder="Enter name" required>
+                    </label>
+                    <label for="email" id="email-label">Email: 
+                        <input id="email" type="email" placeholder="Enter email" required>
+                    </label>
+                    <label for="age" id="number-label">Age: 
+                        <input id="number" type="number" min="13" max="60" placeholder="Enter age" required>
+                    </label>
+                    <label for="current-role"> Which option best describes your current role?
+                        <select id="dropdown">
+                            <option>Select current role</option>
+                            <option>Student</option>
+                            <option>Full Time Job</option>
+                            <option>Full Time Learner</option>
+                            <option>Prefer not to say</option>
+                            <option>Other</option>
+                        </select>
+                    </label>
+                </fieldset>
 
+                <fieldset>
+                    <legend>Would you recommend Janja Programmers to a friend?</legend>
+                    <label for="definitely"><input type="radio" name="recommend" class="inline" checked> Definitely</label>
+                    <label for="maybe"><input type="radio" name="recommend" class="inline"> Maybe</label>
+                    <label for="not-sure"><input type="radio" name="recommend" class="inline"> Not sure</label>
+
+                    <legend>What would you like to see improved?</legend>
+                    <label><input type="checkbox" value="1" class="inline"> Front-end Projects</label>
+                    <label><input type="checkbox" value="2" class="inline"> Back-end Projects</label>
+                    <label><input type="checkbox" value="3" class="inline"> Open Source Community</label>
+                    <label><input type="checkbox" value="4" class="inline"> Additional Courses</label>
+                </fieldset>
+
+                <fieldset>
+                    <label for="comments">Any comments or suggestions?
+                        <textarea placeholder="Enter your comments here..." rows="3" cols="4">
+                        </textarea>
+                    </label>
+                    <button id="submit">Submit</button>
+                </fieldset>
+            </form>
+        </div>
+    </body>
+</html>
