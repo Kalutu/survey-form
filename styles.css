@@ -1,1 +1,153 @@
+/* Default styles */
+
+body {
+    width: 100%;
+    height: 100vh;
+    margin: 0;
+    background-image: url(images/background.jpg);
+    background-size: cover;
+    background-position: center center;
+    font-family: Tahoma;
+    font-size: 16px;
+}
+
+h1{
+    text-align: center;
+    font-size: 40px;
+}
+
+h2, p {
+    text-align: center;
+}
+
+img {
+    display: block;
+    margin: 0 auto;
+    width: 30%;
+    max-width: 100%;
+    margin-top: -80px;
+    margin-bottom: -100px;
+    padding-top: 2em;
+}
+
+.content {
+    margin: 0 auto;
+    width: 60%;
+    background-color: burlywood;
+    max-width: 100%;
+}
+
+form {
+    width: 60vw;
+    max-width: 500px;
+    min-width: 300px;
+    margin: 0 auto;
+    padding-bottom: 2em;
+}
+
+input {
+    display: block;
+    border-color: burlywood;
+    width: 100%;
+    height: 25px;
+    margin: 10px 0 0 0;
+}
+
+#dropdown {
+    display: block;
+    width: 100%;
+    height: 30px;
+    border-color: burlywood;
+    margin: 10px 0 0 0;
+}
+
+option {
+    font-size: 16px;
+}
+
+fieldset {
+    border: none;
+}
+
+label {
+    font-size: 16px;
+    display: block;
+}
+
+legend {
+    font-size: 16px;
+    padding-top: 15px;
+}
+
+.inline {
+    width: unset;
+    vertical-align: middle;
+}
+
+input[type="radio"] {
+    display: inline-block;
+}
+
+input[type="checkbox"] {
+    display: inline-block;
+}
+
+textarea {
+    display: block;
+    width: 300px;
+    height: 80px;
+}
+
+button {
+    margin-top: 20px;
+    color: black;
+    background-color: rgb(24, 142, 182);
+    width: 300px;
+    height: 30px;
+    border: none;
+}
+
+/* Media queries */
+
+@media screen and (max-width: 600px) {
+    /* Modify styles for screens smaller than 600px */
+    img {
+        margin-top: 0;
+        margin-bottom: 0;
+        padding-top: 1em;
+    }
+    .content {
+        width: 90%;
+    }
+    form {
+        width: 90%;
+    }
+    textarea {
+        width: 90%;
+    }
+    button {
+        width: 90%;
+    }
+}
+
+@media screen and (min-width: 601px) and (max-width: 900px) {
+    /* Modify styles for screens between 601px and 900px */
+    img {
+        margin-top: 0;
+        margin-bottom: 0;
+        padding-top: 1em;
+    }
+    .content {
+        width: 80%;
+    }
+    form {
+        width: 80%;
+    }
+    textarea {
+        width: 80%;
+    }
+    button {
+        width: 80%;
+    }
+}
 
