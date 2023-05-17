@@ -1,6 +1,9 @@
 # Survey Form
 This is an HTML webpage that displays a survey form created using HTML and styled with CSS. The webpage asks users to provide their name, email, age, current role, and their feedback about Janja Programmers. The form also includes radio buttons and checkboxes to gather feedback and comments.
 
+## Preview
+![Technical Documentation Page Website Preview](images/tech-documentation.PNG)
+
 ## Features
 - Users can input their name, email, and age.
 - A dropdown list is provided to select the current role.
